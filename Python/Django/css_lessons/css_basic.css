@@ -1,0 +1,83 @@
+/* This is a comment*/
+
+/* Specificity:
+    * classed are above general tags in the hierarchy
+    * id's are above classes and general tags
+    * more can be found in mdn - spedificity
+ */
+
+body {
+    background-color: grey;
+    /*I can also set the background to be an image located on the web:
+    background: url(URL);*/
+}
+
+table {
+    background: white;
+    border-color: blue;
+    border-width:5px;
+    border-style: dotted;
+}
+
+span {
+    color: azure;
+    font-family: "Times New Roman";
+}
+
+h3 {
+    color: blue;
+}
+
+h4 {
+    color: #b7ff00;
+}
+
+h2 {
+    color: rgb(255,13,0);
+}
+
+/*a stands for alpha and is responsible for the transparency */
+
+p {
+    color:rgba(255,13,0, 0.5);
+ }
+
+ /*id's start with a # */
+
+#radioid {
+    text-decoration: line-through;
+}
+
+/* classes start with a dot */
+/*classes won't overwrite a unique tag style*/
+.labeldiv {
+    background: white;
+    color: green;
+}
+
+/* select ul element near an h3 element*/
+h3 + ul {
+    change something
+}
+
+
+/* change only p element inside the classname class*/
+p.classname {
+    do something
+}
+
+/* change only and a element inside a li element */
+li a {
+    do something;
+}
+
+/* change only and a element inside a li element with an attribute of href link to google.com */
+li a[href="www.google.com"]{
+    do something;
+}
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css_lessons/css_basic.css">
+        <title>
+            Advanced HTML
+        </title>
+    </head>
+    <body>
+        <h3>Tables!</h3>
+        <table border="5">
+            <thead>
+                <tr>
+                    <!--thead tag will show the text in bold, you can create a table with out it-->
+                    <th>GDP</th>
+                    <th>Flag</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>250</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/300px-Flag_of_the_United_States.svg.png"></td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png"></td>
+                <td>France</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/255px-Flag_of_Japan.svg.png"></td>
+                <td><span>Japan</span></td>
+            </tr>
+        </table>
+        <h3>Forms!</h3>
+        <h4>Please type your username and password</h4>
+        <form class="" action="http://www.google.com" method="get">
+        <!--when input equals 'email', the browser will check that we insert a valid email-->
+        <!--the user name value will be the key of the entered value in the http request
+        in this example it will be: ?useremail=avi@qa.com-->
+            <input type="email" name="useremail" value="Type email">
+            <!--when type equals 'password', when typing in the pass, it will won't show the password-->
+            <input type="password" name="password" value="">
+            <input type="submit" name="submit" value="Submit">
+        </form>
+        <h1>Choose a color</h1>
+        <h2>Click on button</h2>
+        <form>
+        <input type="color" name="" value="">
+        </form>
+        <div class="textdiv">
+            <h2>Enter text</h2>
+            <form action="http://www.google.com" method="get">
+                <input type="text" name="q" value="Enter text">
+                <input type="submit" name="" value="Submit">
+            </form>
+        </div>
+        <div class="labeldiv">
+            <h3>Labels!</h3>
+            <form action="http://www.google.com" method="get">
+                <label for="username">Enter username</label>
+                <input id="username" type="email" name="q" placeholder="Enter text" required>
+                <label for="userpass">Enter pass</label>
+                <input id="userpass" type="password" name="q" placeholder="Enter password" required>
+                <input id="" type="submit" name="" value="Submit">
+                <!--the required key word will make the field to have data in it-->
+            </form>
+        </div>
+        <h3 id="radioid">Radio Button</h3>
+            <form action="http://www.google.com" method="get">
+                <h4>Where are you from?</h4>
+                <label for="israel">Israel</label>
+                <input id="israel" type="radio" name="location" value="israel">
+                <label for="USA">USA</label>
+                <input id="USA" type="radio" name="location" value="usa">
+                <input type="submit" value="submit">
+                <!--giving the radio buttons the same name, will make it possible to choose only one of them-->
+            </form>
+        <h3>DropDown Menu</h3>
+            <form action="http://www.google.com" method="get">
+                <select name="stars">
+                    <option value="1">good</option>
+                    <option value="2">ok</option>
+                    <option value="3">bad</option>
+                </select>
+                <p>Text area</p>
+                <textarea name="feedback" rows="8" cols="80"></textarea>
+                <input type="submit" value="submit">
+            </form>
+    </body>
+</html>
