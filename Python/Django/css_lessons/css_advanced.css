@@ -1,5 +1,5 @@
 /* 1em equals 20px as set in the body */
-
+/*  we can download and isntall fonts from google fonts */
 body {
     font-size: 20px;
     font-weight: bold;
@@ -7,7 +7,7 @@ body {
 
 
 h3 {
-    font-family: "Arial";
+    font-family: Lobster;
     font-weight: bold;
     text-align: center;
 }
@@ -15,4 +15,26 @@ h3 {
 h2 {
     font-size: 2.0em;
     font-style: italic;
+}
+
+/*  box model:
+content | padding | border | margin
+*/
+
+#one {
+    border: 4px solid blue;
+    width: 25%;
+    text-align: center;
+    /*  the margin the setting the distnce from the element to the edges of the dom
+    top right down lefg
+    margin: 10px 20px 100px 400px; */
+    margin: auto;
+}
+
+#two {
+    border: 4px solid red;
+    width: 50%;
+    /*  padding is space between the text of the element to the border of the element */
+    padding: 200px;
+    text-align: center;
 }
