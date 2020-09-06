@@ -24,3 +24,9 @@ for (var i = 0; i < 5; i++) {
     //execute code
 }
 
+//functions
+
+function firstFunction(param1, param2="defaultValue") {
+    //code to execute
+    //return or not a value with the key word return
+}
