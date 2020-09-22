@@ -60,3 +60,4 @@ while(True):
     check_price()
     time.sleep(86400)
     logger.info('See you tomorrow!')
+    
