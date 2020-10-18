@@ -1,0 +1,30 @@
+{ "users":
+	[
+		{
+		  "name": "avi",
+		  "lastName": "Ts",
+		  "age": 34,
+		  "country": "IL"
+		},
+		{ "name": "oren",
+		  "lastName": "sho",
+		  "age": 42,
+		  "country": "USA"
+		},
+		{ "name": "tali",
+		  "lastName": "ula",
+		  "age": 22,
+		  "country": "FR"
+		},
+		{ "name": "micheal",
+		  "lastName": "keres",
+		  "age": 54,
+		  "country": "NL"
+		},
+		{ "name": "Yurgen",
+		  "lastName": "tulifanker",
+		  "age": 37,
+		  "country": "UR"
+		}
+	]
+}
