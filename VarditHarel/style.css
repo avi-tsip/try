@@ -1,0 +1,20 @@
+body {
+    background-image: url("family_image.jpg");
+    background-size: 100% auto;
+    background-color: #cccccc;
+    font-family: 'Amatic SC', cursive;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 35%;
+}
+
+#form {
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+
