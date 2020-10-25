@@ -1,9 +1,13 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse, abort
+from flask_sqlalchemy import SQLAlchemy
 
 # Initializing flask object
 app = Flask(__name__)
 api = Api(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///employee.db'
+db = SQLAlchemy(app)
+db.create_all()
 
 # Parsing the put requests for the employee class
 employee_put_args = reqparse.RequestParser()
