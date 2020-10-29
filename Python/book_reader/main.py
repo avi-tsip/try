@@ -20,4 +20,3 @@ for num in range(3, pages): # Start to count from 3 to the end of the pages
     else:
         break
 speaker.stop()
-
