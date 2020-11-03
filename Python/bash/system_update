@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# This script will update the system
+
+# Set Bash to quit script and exit on errors
+set -e
+
+update() {
+    echo "-----STARTING UPDATE AND UPGRADE-----"
+    sudo apt updade -yy
+    sudo apt dist-upgrade -yy
+    echo "-----FINISHED UPDATING AND UPGRADING-----"
+}
+
+clean() {
+    echo "-----STARTING CLEANING-----"
+    sudo apt autoremove -yy
+    sudo apt autoclean
+    echo "-----CLEANING FINISHED SUCCESSFULLY-----"
+}
+
+leave() {
+    echo "-----SCRIPT FINISHED RUNNING SUCCESSFULLY-----"
+    exit
+}
+up-help() {
+
+    cat << _EOF_
+
+    This tool is updating and cleaning the distro software
+    use --clean to run a full update and cleanup
+    use --help go get help
+    use --
+
+_EOF_
+}
+
+if ["$1" == "--clean"]; then
+    update
+    clean
+    leave
+fi
+
+if ["$1" == "--help"]; then
+    up-help
+    exit
+fi
+
+if [ -n "$1" ]; then
+    echo "-----Error: invalid argument. Try --help for more info." >&2
+    exit 1
+fi
+
+update
+leave
+exit
+
