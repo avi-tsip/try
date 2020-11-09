@@ -24,8 +24,8 @@ salt = "".join(choice(allchar)for x in range(randint(min_char, max_char)))
 d = datetime.utcnow()
 timestamp = calendar.timegm(d.utctimetuple())
 
-access_key = ''   # The access key received from Rapyd.
-secret_key = ''   # Never transmit the secret key by itself.
+access_key = '14294FE3A75919F6F030'   # The access key received from Rapyd.
+secret_key = 'b8fc987280c81e3d08fc775ac3b77b589a029e66ee3a6fb0e962ed4d50d65f6f931eb8d80fd049b6'   # Never transmit the secret key by itself.
 
 body = ''                        # JSON body goes here.
 
@@ -48,5 +48,7 @@ headers = {
 
 print(url)
 
-r = requests.get(url, headers = headers)
-print(r.text)
+result = requests.get(url, headers = headers)
+result_json = json.loads(result.text)
+for index in result_json['data']:
+    print(index['name'])
