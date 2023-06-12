@@ -128,8 +128,6 @@ class LocatesDistributer:
             return proportional_amounts
 
 
-
-
 def main():
     locates_distributer = LocatesDistributer()
     locates_distributer.generate_demand_csv(9)
