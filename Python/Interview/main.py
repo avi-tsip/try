@@ -1,8 +1,6 @@
 import csv
 import random
 
-from typing import Dict
-
 
 class LocatesDistributer:
 
